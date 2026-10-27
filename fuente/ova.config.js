@@ -7,7 +7,7 @@
    Versión template: hibrida
 
    UP-001: el contenido de andina/unidad-demo (el mismo Word de ejemplo, literal y en «usted»)
-   con la piel de UP. Se presenta como «Unidad 3» en toda la capa editorial (D8); las menciones
+   con la piel de UP. Se presentaba como «Unidad 3» (D8); desde la ronda del 2026-10-26 es «Cuaderno de aprendizaje 1» con el tema S1; las menciones
    del Word a las unidades 1 y 2 quedan literales. El pódcast y el video son los de Andina (D3).
    ========================================================= */
 
@@ -23,7 +23,7 @@ module.exports = {
   },
 
   course: {
-    code:             '',
+    code:             'CUADERNO DE APRENDIZAJE 1',   // ronda del cliente del 2026-10-26 (antes, sin código; «Unidad 3» en los eyebrows)
     name:             'Gobierno, calidad y protección de datos',
     subtitle:         'Datos y Persistencia Avanzada: Diseño, Performance y Gobierno',   // sin el rótulo «Asignatura -»
     duration:         '',
@@ -48,7 +48,7 @@ module.exports = {
     { id: 'introduccion', titulo: 'Introducción',            tipo: 'especial', icon: 'mdi:information-variant',
       secciones: [ { titulo: '¿Qué va a lograr en esta unidad?', ancla: 'que-va-a-lograr' } ] },
 
-    { id: 'tema1',        titulo: 'Gobierno de datos',       tipo: 'tema', numero: 1,
+    { id: 'tema1',        titulo: 'Gobierno de datos',       tipo: 'tema', numero: 1, rotulo: 'S1',
       secciones: [ { titulo: 'Gobierno, gestión y administración de datos',                ancla: 'tema1-1' },
                    { titulo: 'Roles, políticas, responsabilidades y ciclo de vida del dato', ancla: 'tema1-2' } ] },
 
