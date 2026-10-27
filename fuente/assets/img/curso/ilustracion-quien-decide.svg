@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img"
+     aria-label="Una hoja de decisión dividida en tres partes. A la izquierda, la decisión escrita en renglones; al centro, la persona que decide, sobre un bloque dorado, con su firma debajo; a la derecha, un sello estampado con un visto. Bajo cada parte, su rótulo: qué se decide, quién lo decide y cómo se hace exigible.">
+  <!-- Ilustración de marca · Posgrados Panamericana · unidad-demo · tema 1 (apertura) · UP-001 T7 (D9)
+       Concepto (DI, p48): «distinguir qué se decide, quién lo decide y cómo se hace exigible en
+       materia de datos». Misma idea que la aprobada en Andina, redibujada en la familia de UP (§1.7, §1.4):
+       plana, geométrica, sin trazo en las figuras; ortogonal y diagonal, sin curvas salvo la cabeza;
+       radios de 2 a 8 px; persona sin rostro; sombra tintada en verde hondo.
+       Ronda del diagramador (2026-10-26): la hoja ocupa el ancho (60-1140) y las piezas crecen 1,15;
+       el viewBox y los rótulos quedan en la medida de la familia (1200×440, 14 px).
+       Una sola hoja: lo escrito, quien la firma y el sello que la hace exigible.
+       Rótulos: los tres fragmentos literales del DI. Guion en insumos/ILUSTRACIONES.md.
+       Único dorado: el bloque detrás de quien decide (la autoridad que, según el DI, falta cuando
+       «nadie tenía autoridad para decidir y nadie respondía por el resultado»). -->
+  <defs>
+    <linearGradient id="ilu-quien-decide-fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#E4EEEB"/>
+      <stop offset="55%"  stop-color="#ECF1EF"/>
+      <stop offset="100%" stop-color="#F6F8F7"/>
+    </linearGradient>
+    <filter id="ilu-quien-decide-sombra" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0A4039" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="440" rx="4" fill="url(#ilu-quien-decide-fondo)"/>
+
+  <!-- La hoja de la decisión -->
+  <g filter="url(#ilu-quien-decide-sombra)">
+    <rect x="60" y="44" width="1080" height="352" rx="6" fill="#FFFFFF"/>
+  </g>
+  <!-- cabecera de la hoja -->
+  <path d="M66 44 H1134 a6 6 0 0 1 6 6 V56 H60 V50 a6 6 0 0 1 6 -6 z" fill="#0A4039"/>
+
+  <!-- Separadores entre las tres partes -->
+  <g fill="#CFE0DC">
+    <rect x="419" y="80" width="2" height="230"/>
+    <rect x="779" y="80" width="2" height="230"/>
+  </g>
+
+  <g transform="translate(245 195) scale(1.15) translate(-345 -195)">
+  <!-- ══ Qué se decide: la decisión escrita ══ -->
+  <rect x="270" y="96" width="136" height="14" rx="2" fill="#0A4039"/>
+  <g fill="#3F7D74">
+    <rect x="270" y="136" width="150" height="7" rx="2"/>
+    <rect x="270" y="160" width="132" height="7" rx="2"/>
+    <rect x="270" y="184" width="146" height="7" rx="2"/>
+    <rect x="270" y="208" width="112" height="7" rx="2"/>
+    <rect x="270" y="232" width="140" height="7" rx="2"/>
+    <rect x="270" y="256" width="84"  height="7" rx="2"/>
+  </g>
+  </g>
+
+  <g transform="translate(600 195) scale(1.15) translate(-600 -195)">
+  <!-- ══ Quién lo decide: la persona y su firma ══ -->
+  <!-- ÚNICO DORADO: quien tiene autoridad para decidir y responde por el resultado -->
+  <rect x="546" y="88" width="108" height="108" rx="4" fill="#B9975B"/>
+  <g fill="#0A4039">
+    <circle cx="600" cy="124" r="16"/>
+    <polygon points="572,196 578,148 622,148 628,196"/>
+  </g>
+  <!-- la firma: tramos diagonales, sin curvas -->
+  <polyline points="556,262 570,236 580,258 594,232 604,256 618,238 626,254 646,244"
+            fill="none" stroke="#0F5C51" stroke-width="3.5" stroke-linecap="butt" stroke-linejoin="miter"/>
+  <rect x="546" y="272" width="108" height="2" fill="#5F6663"/>
+  </g>
+
+  <g transform="translate(960 195) scale(1.15) translate(-860 -195)">
+  <!-- ══ Cómo se hace exigible: el sello estampado ══ -->
+  <g transform="rotate(-8 860 180)">
+    <rect x="806" y="126" width="108" height="108" rx="6" fill="#0F5C51"/>
+    <rect x="817" y="137" width="86" height="86" rx="4" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <polyline points="836,182 853,199 885,165" fill="none" stroke="#FFFFFF" stroke-width="8"
+              stroke-linecap="butt" stroke-linejoin="miter"/>
+  </g>
+  </g>
+
+  <!-- Los rótulos: las palabras del DI -->
+  <g font-family="Seravek, 'Source Sans 3', system-ui, sans-serif" font-size="14" font-weight="600"
+     fill="#0A4039" text-anchor="middle">
+    <text x="240" y="352">qué se decide</text>
+    <text x="600" y="352">quién lo decide</text>
+    <text x="960" y="352">cómo se hace exigible</text>
+  </g>
+</svg>
